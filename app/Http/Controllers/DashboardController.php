@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Order;
+use App\Http\Requests\FilterOrdersRequest;
+
 
 class DashboardController extends Controller
 {
@@ -20,10 +22,10 @@ class DashboardController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\FilterOrdersRequest  $request
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index( Request $request )
+    public function index( FilterOrdersRequest $request )
     {
 
     $orders = Order::filterOrders( $request );
