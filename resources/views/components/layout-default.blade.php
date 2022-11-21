@@ -21,7 +21,7 @@
 			<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
 				<div class="container">
 					<a href="{{ url('/') }}">
-						<img src='{{ asset('storage/logo_telecontrol.png') }}'>
+						<img src='{{ asset('storage/logo-example.png') }}'>
 					</a>
 					<div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
 						<!-- Left Side Of Navbar -->
